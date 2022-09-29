@@ -1,0 +1,1 @@
+If you are on Windows you either have to put SFML in C:/ or change the SFML_PATH variable in the Makefile
