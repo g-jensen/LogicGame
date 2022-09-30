@@ -2,6 +2,7 @@
 
 NotNode::NotNode(LogicNode* input) {
     input_nodes[0] = input;
+    input_nodes[1] = nullptr;
 }
 
 bool NotNode::execute() {

@@ -9,7 +9,7 @@
 class Serialization {
 public:
     static std::string serialize_component(LogicNode* last_node);
-    //static LogicNode* deserialize_component(std::string json);
+    static LogicNode* deserialize_component(std::string json);
 private:
     static void serialize_component_recursive(LogicNode* node, std::vector<std::string>& component_strings);
     static int and_count;

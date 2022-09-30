@@ -4,9 +4,17 @@
 #include "../headers/utils.hpp"
 
 #include <iostream>
+#include <fstream>
+
+#include "../nlohmann-json/single_include/nlohmann/json.hpp"
+using json = nlohmann::json;
 
 int main() {
     
+    std::ifstream f("test.json");
+    json data = json::parse(f);
+    std::cout << data[0] << std::endl;
+
     LogicNode* input1 = new InputNode(true);
     LogicNode* input2 = new InputNode(false);
 
