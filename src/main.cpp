@@ -1,6 +1,7 @@
 #include "../headers/Game.hpp"
 #include "../headers/Nodes.hpp"
 #include "../headers/Serialization.hpp"
+#include "../headers/utils.hpp"
 
 #include <iostream>
 
@@ -20,12 +21,7 @@ int main() {
 
     std::cout << Serialization::serialize_component(not_conjunction) << std::endl;
 
-    delete input1;
-    delete input2;
-    delete not_input1;
-    delete not_input2;
-    delete conjunction;
-    delete not_conjunction;
+    free_component(not_conjunction);
 
     // Game game = Game();
     // game.init();
