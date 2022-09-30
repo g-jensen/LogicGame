@@ -1,8 +1,17 @@
 #include "../headers/Game.hpp"
-
 #include "../headers/Nodes.hpp"
 
 #include <iostream>
+#include <unordered_map>
+#include <string>
+
+// LogicNode* deserialize_component(std::string json) {
+
+// }
+
+// std::string serialize_component(LogicNode* last_node) {
+
+// }
 
 int main() {
     
@@ -18,6 +27,22 @@ int main() {
 
     std::cout << not_conjunction->execute() << std::endl;
 
+/*
+
+How to serialize:
+
+note: INPUT_1 and INPUT_2 are fixed and in every component
+
+{
+    "1_not": ["INPUT_1"],
+    "2_not": ["INPUT_2"],
+    "1_and": ["1_not", "2_not"],
+    "3_not": ["1_and"]
+}
+
+
+*/
+
     delete input1;
     delete input2;
     delete not_input1;
@@ -25,10 +50,10 @@ int main() {
     delete conjunction;
     delete not_conjunction;
 
-    // Game game = Game();
-    // game.init();
-    // game.run();
-    // game.cleanup();
+    Game game = Game();
+    game.init();
+    game.run();
+    game.cleanup();
 
     return 0;
 }

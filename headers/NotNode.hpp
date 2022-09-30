@@ -4,6 +4,6 @@
 
 class NotNode: public LogicNode {
 public:
-    NotNode::NotNode(LogicNode* input);
+    NotNode(LogicNode* input);
     bool execute();
 };
