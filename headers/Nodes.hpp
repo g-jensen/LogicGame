@@ -5,3 +5,4 @@
 #include "FalseNode.hpp"
 #include "AndNode.hpp"
 #include "NotNode.hpp"
+#include "InputNode.hpp"
