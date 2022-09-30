@@ -4,3 +4,4 @@
 #include "TrueNode.hpp"
 #include "FalseNode.hpp"
 #include "AndNode.hpp"
+#include "NotNode.hpp"

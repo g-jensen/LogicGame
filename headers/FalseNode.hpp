@@ -5,5 +5,4 @@
 class FalseNode: public LogicNode {
 public:
     bool execute();    
-    std::vector<LogicNode*> input_nodes;
 };

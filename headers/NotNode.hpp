@@ -2,7 +2,7 @@
 
 #include "LogicNode.hpp"
 
-class AndNode: public LogicNode {
+class NotNode: public LogicNode {
 public:
     bool execute();
 };
