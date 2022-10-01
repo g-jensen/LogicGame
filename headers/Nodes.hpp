@@ -6,3 +6,12 @@
 #include "AndNode.hpp"
 #include "NotNode.hpp"
 #include "InputNode.hpp"
+
+enum NodeType {
+    TRUE,
+    FALSE,
+    AND,
+    NOT,
+    INPUT,
+    ERROR_TYPE
+};
